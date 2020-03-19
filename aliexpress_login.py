@@ -6,7 +6,7 @@ browser = webdriver.Firefox()
 
 def get_cookies():
     browser.get("https://login.aliexpress.com/?flag=1&return_url=http%3A%2F%2Fportals.aliexpress.com%2Fhelp.htm%3Fpage%3Dhelp_center%26toMenu%3DtopQuestions")
-    print('input your username and password in Firefox and hit Submit')
+    print('Podaj usera i haslo i kliknij na Submit')
     input('Hit Enter here if you have summited the form: <Enter>')
     cookies = browser.get_cookies()
     pickle.dump(cookies, open("cookies.pickle", "wb"))
